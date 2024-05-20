@@ -1,0 +1,65 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+  }
+
+  body {
+      background-image: radial-gradient(red, white);
+      position: relative;
+
+  }
+
+  .here {
+      display: none;
+      position: absolute;
+      top: 20rem;
+      left: 15rem;
+      background-color: white;
+      width: 7rem;
+      height: 2rem;
+      padding: 5px 0 0px 13px;
+      border-radius: 3px;
+      animation-name: show;
+      animation-duration: 0.5s;
+      animation-direction: normal;
+
+  }
+
+  @keyframes show {
+      0% {
+          position: relative;
+          top: 1px;
+      }
+
+
+      100% {
+          position: relative;
+          top: 20rem;
+      }
+  }
+
+  .here span {
+      margin-left: 10px;
+      font-weight: bold;
+
+      cursor: pointer;
+  }
+
+
+  .modal {
+      position: absolute;
+      top: 30rem;
+      border: solid 2px white;
+      width: 9rem;
+      height: 2rem;
+      padding-top: 3px;
+      border-radius: 5px;
+      cursor: pointer;
+
+  }
+
+  .modal:hover {
+      background-color: white;
+  }
